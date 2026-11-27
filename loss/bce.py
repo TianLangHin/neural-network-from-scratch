@@ -2,7 +2,6 @@ from .base import Loss, np
 
 
 class BinaryCrossEntropy(Loss):
-
     def __init__(self, *, eps: float = 1e-8):
         # Used for numerical stability.
         self.eps = eps

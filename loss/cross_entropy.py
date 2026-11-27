@@ -6,7 +6,6 @@ from .base import Loss, np
 # and thus requiring the softmax activation function to not be included in
 # the last layer of the network.
 class CrossEntropyWithSoftmax(Loss):
-
     def compute(self, y_true: np.ndarray, y_pred: np.ndarray, *,
                 mean: bool = True) -> np.float64 | np.ndarray:
         # The inner product component uses the raw logits first.
