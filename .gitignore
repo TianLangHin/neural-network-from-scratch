@@ -1,2 +1,8 @@
+# Ignoring PyCache
 __pycache__/
+
+# Ignoring MyPy type-checking cache
 .mypy_cache/
+
+# Ignoring data download dump files.
+data/*/
