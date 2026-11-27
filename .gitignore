@@ -1,8 +1,13 @@
-# Ignoring PyCache
+# Ignores PyCache
 __pycache__/
 
-# Ignoring MyPy type-checking cache
+# Ignores MyPy type-checking cache
 .mypy_cache/
 
-# Ignoring data download dump files.
+# Ignores data download dump files.
 data/*/
+
+# Ignores datasets stored as serialised NumPy arrays,
+# as well as text files used for training next-token prediction.
+data/*.npy
+data/*.txt
