@@ -2,7 +2,6 @@ from .base import Layer, RandomState, kaiming_init, np
 
 
 class Linear(Layer):
-
     def __init__(self, in_features: int, out_features: int, *,
                  random_state: RandomState, bias: bool = True):
         # Learnable parameters (weight matrix and bias vector).
